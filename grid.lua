@@ -1,5 +1,12 @@
-hs.grid.setGrid('5x4', '2560x1440')
-hs.grid.setGrid('6x2', '1280x800')
+local grids = {
+	['2560x1440'] = '5x4',
+	['1280x800'] = '6x2',
+	['1920x1080'] = '6x2'
+}
+
+for res, grid in pairs(grids) do
+	hs.grid.setGrid(grid, res)
+end
 
 hs.grid.ui.textColor = {1, 1, 1, 0.5}
 hs.grid.ui.cellColor = {0, 0, 0, 0.25}
@@ -19,7 +26,7 @@ hs.grid.ui.showExtraKeys = false
 hs.grid.setMargins({0,0})
 
 hs.hotkey.bind(m1, "G", function()
-  hs.grid.toggleShow()
+	hs.grid.toggleShow()
 end)
 
 hs.hotkey.bind(m1, "H", function()
