@@ -1,7 +1,7 @@
 local grids = {
 	['2560x1440'] = '5x4',
 	['1280x800'] = '6x2',
-	['1920x1080'] = '6x2'
+	['1920x1080'] = '6x4'
 }
 
 for res, grid in pairs(grids) do
@@ -15,7 +15,7 @@ hs.grid.ui.selectedColor = {1, 1, 1, 0.1}
 hs.grid.ui.highlightColor = {0.8, 0.8, 0, 0.0}
 hs.grid.ui.highlightStrokeColor = {0, 0, 0, 0}
 
-hs.grid.ui.textSize = 100
+hs.grid.ui.textSize = 40
 hs.grid.ui.cellStrokeWidth = 0
 hs.grid.ui.highlightStrokeWidth = 0
 

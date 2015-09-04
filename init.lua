@@ -2,7 +2,7 @@ require('bindings')
 require('grid')
 
 -- spectacle emulation
--- todo: replace with a better thing
+-- todo: rewrite with hs.grid
 require('sizeup')
 
 -- params
