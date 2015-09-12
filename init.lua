@@ -1,5 +1,6 @@
 require('bindings')
 require('grid')
+require('movement')
 
 -- spectacle emulation
 -- todo: rewrite with hs.grid
